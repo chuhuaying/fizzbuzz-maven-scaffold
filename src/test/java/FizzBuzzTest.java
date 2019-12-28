@@ -1,11 +1,12 @@
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class FizzBuzzTest {
 
     @Test
-    public void RainyTest(){
-        Assert.assertEquals("Oops",FizzBuzz.fizzBuzzGame(0,3,5));
+   public void RainyTest(){
+        Assert.assertEquals("Oops",FizzBuzz.fizzBuzzGame(-1,3,5));
     }
     @Test
     public void numberTest(){

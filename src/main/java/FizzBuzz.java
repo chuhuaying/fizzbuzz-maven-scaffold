@@ -1,27 +1,35 @@
+/**
+ * class FizzBuzz
+ * Author: chuhuaying
+ * Date: 2019-12-28
+ */
 public class FizzBuzz {
     public static String fizzBuzzGame(long x, long fizzNumber, long buzzNumber) {
-
-        if (x <= 0){
-            System.out.println("Please specify an integer greater than 0.\n");
+        String returnValue = "";
+        if (x <= 0) {
             return "Oops";
         }
-
-        if (( x % fizzNumber == 0) && ( x % buzzNumber == 0)) {
-            return "FizzBuzz";
-        }
-        else if (x % fizzNumber == 0) {
-            return "Fizz";
+        if ((x % fizzNumber == 0) && (x % buzzNumber == 0)) {
+            returnValue = "FizzBuzz";
+        } else if (x % fizzNumber == 0) {
+            returnValue = "Fizz";
         } else if (x % buzzNumber == 0) {
-            return "Buzz";
+            returnValue = "Buzz";
         } else {
-            return String.valueOf(x);
+            returnValue = String.valueOf(x);
         }
+        return returnValue;
     }
 
-    public static void main(String[] args) {
-
+    /*
+     * main class
+     */
+    public static void main (String[] args) {
+        /**
+         * loop 100 times and print the result
+         */
         for (int x = 1; x <= 100; x++) {
-            System.out.println(fizzBuzzGame(x,3,5));
+            System.out.println(fizzBuzzGame(x, 3, 5));
         }
 
     }
