@@ -36,7 +36,7 @@ public class FizzBuzz {
          * loop 100 times and print the result
          */
         for (int x = 1; x <= 100; x++) {
-            System.out.println(fizzBuzzGame(x, 3, 5,7));
+            System.out.println(fizzBuzzGame(x, 3, 5, 7));
         }
 
     }
