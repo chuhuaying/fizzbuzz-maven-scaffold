@@ -28,7 +28,7 @@ public class FizzBuzz {
         }
         return returnValue;
     }
-    /*
+    /**
      * main class
      */
     public static void main(String[] args) {
